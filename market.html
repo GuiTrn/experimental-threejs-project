@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Market</title>
-    <!-- Inclure le CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -16,17 +15,17 @@
         }
         .content-wrapper {
             flex: 1;
-            overflow-y: auto; /* Activer la scrollbar */
-            background-color: transparent; /* Fond transparent */
-            margin-top: 10px; /* Ajuste l'espace en haut de la liste */
-            max-height: calc(100vh - 200px); /* Réduit la hauteur de la liste pour remonter le bas */
+            overflow-y: auto;
+            background-color: transparent;
+            margin-top: 10px;
+            max-height: calc(100vh - 200px);
         }
         .card {
             overflow: hidden;
         }
         .three-container {
             width: 100%;
-            height: 300px; /* Fixe la hauteur des modèles */
+            height: 300px;
         }
         .title {
             text-align: center;
@@ -37,88 +36,136 @@
     </style>
 </head>
 <body>
-    <!-- Header Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Three.js App</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="base.html">Base</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="market.html">Market</a>
-                    </li>
-                </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Three.js App</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="base.html">Base</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="market.html">Market</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="title">3D Market</div>
+<div class="container content-wrapper">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-1"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Pretty Stone</h5>
+                    <p class="card-text">Buy an amazing stone.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- Titre principal -->
-    <div class="title">3D Market</div>
-
-    <!-- Contenu principal avec scroll -->
-    <div class="container content-wrapper">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Cards -->
-            <!-- Card 1 -->
-            <div class="col">
-                <div class="card shadow-lg">
-                    <div class="three-container" id="three-container-1"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Pretty Stone</h5>
-                        <p class="card-text">Buy an amazing stone.</p>
-                        <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
-                    </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-2"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Fire Axe</h5>
+                    <p class="card-text">Buy an amazing fire axe.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="col">
-                <div class="card shadow-lg">
-                    <div class="three-container" id="three-container-2"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Fire Axe</h5>
-                        <p class="card-text">Buy an amazing fire axe.</p>
-                        <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
-                    </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-3"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Boot</h5>
+                    <p class="card-text">Buy an amazing boot.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
                 </div>
             </div>
-            <!-- Card 3 -->
-            <div class="col">
-                <div class="card shadow-lg">
-                    <div class="three-container" id="three-container-3"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Boot</h5>
-                        <p class="card-text">Buy an amazing boot.</p>
-                        <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
-                    </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-4"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Pretty Stone</h5>
+                    <p class="card-text">Buy an amazing stone.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-5"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Fire Axe</h5>
+                    <p class="card-text">Buy an amazing fire axe.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-6"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Boot</h5>
+                    <p class="card-text">Buy an amazing boot.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-7"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Pretty Stone</h5>
+                    <p class="card-text">Buy an amazing stone.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-8"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Fire Axe</h5>
+                    <p class="card-text">Buy an amazing fire axe.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <div class="three-container" id="three-container-9"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Boot</h5>
+                    <p class="card-text">Buy an amazing boot.</p>
+                    <button class="btn btn-primary buy-button" data-bs-toggle="modal" data-bs-target="#purchaseModal">Buy</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="purchaseModalLabel">Achat confirmé</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Merci pour votre achat !
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
+</div>
+<div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="purchaseModalLabel">Thank</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thank you for your purchase!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
-
-    <!-- Inclure le JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="scripts/market.js"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="scripts/market.js"></script>
 </body>
 </html>
