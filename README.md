@@ -1,4 +1,4 @@
-# Experimental ThreeJS Project.
+# Experimental ThreeJS Project (Personal Sandbox).
 🌐 Follow the official documentation here: Threejs https://threejs.org/
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
