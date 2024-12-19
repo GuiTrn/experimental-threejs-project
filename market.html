@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Market</title>
-    <!-- Inclure le CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -16,17 +15,17 @@
         }
         .content-wrapper {
             flex: 1;
-            overflow-y: auto; /* Activer la scrollbar */
-            background-color: transparent; /* Fond transparent */
-            margin-top: 10px; /* Ajuste l'espace en haut de la liste */
-            max-height: calc(100vh - 200px); /* Réduit la hauteur de la liste pour remonter le bas */
+            overflow-y: auto;
+            background-color: transparent;
+            margin-top: 10px;
+            max-height: calc(100vh - 200px);
         }
         .card {
             overflow: hidden;
         }
         .three-container {
             width: 100%;
-            height: 300px; /* Fixe la hauteur des modèles */
+            height: 300px;
         }
         .title {
             text-align: center;
@@ -37,7 +36,6 @@
     </style>
 </head>
 <body>
-<!-- Header Bootstrap -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Three.js App</a>
@@ -56,14 +54,9 @@
         </div>
     </div>
 </nav>
-<!-- Titre principal -->
 <div class="title">3D Market</div>
-
-<!-- Contenu principal avec scroll -->
 <div class="container content-wrapper">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Cards -->
-        <!-- Card 1 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-1"></div>
@@ -74,7 +67,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 2 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-2"></div>
@@ -85,7 +77,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 3 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-3"></div>
@@ -96,7 +87,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 4 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-4"></div>
@@ -107,7 +97,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 5 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-5"></div>
@@ -118,7 +107,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 6 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-6"></div>
@@ -129,7 +117,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 7 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-7"></div>
@@ -140,7 +127,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 8 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-8"></div>
@@ -151,7 +137,6 @@
                 </div>
             </div>
         </div>
-        <!-- Card 9 -->
         <div class="col">
             <div class="card shadow-lg">
                 <div class="three-container" id="three-container-9"></div>
@@ -164,8 +149,6 @@
         </div>
     </div>
 </div>
-
-<!-- Modal -->
 <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -182,8 +165,6 @@
         </div>
     </div>
 </div>
-
-<!-- Inclure le JS de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="scripts/market.js"></script>
 </body>
