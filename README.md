@@ -33,9 +33,10 @@ Default navigator url (dev)
 
 ## Pages list
 
-| Page             | Details                                                               |
-| ----------------- | ------------------------------------------------------------------ |
-| Base | Simple display of a 3d model on the page with interactions. |
-| 3D Market | List of cards with their 3d model. |
+| Page             | Details                                                               | Creation date
+| ----------------- | ------------------------------------------------------------------ | --------
+| Base | Simple display of a 3d model on the page with interactions. | 19/12/2024
+| 3D Market | List of cards with their 3d model. | 19/12/2024
+| Levitation | Fly animation for the 3d model. | 20/12/2024
 
 
